@@ -15,12 +15,16 @@ import { TableComponent } from './component/table/table.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { WhereAreMyPerxDirective } from './directive/where-are-my-perx.directive';
+import { PerxDirective } from './directive/perx.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
-    TableComponent
+    TableComponent,
+    WhereAreMyPerxDirective,
+    PerxDirective
   ],
   imports: [
     BrowserModule,
