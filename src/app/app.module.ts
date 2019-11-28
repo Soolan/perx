@@ -17,6 +17,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { WhereAreMyPerxDirective } from './directive/where-are-my-perx.directive';
 import { PerxDirective } from './directive/perx.directive';
+import { MyDirectivesComponent } from './component/my-directives/my-directives.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { PerxDirective } from './directive/perx.directive';
     NavigationComponent,
     TableComponent,
     WhereAreMyPerxDirective,
-    PerxDirective
+    PerxDirective,
+    MyDirectivesComponent
   ],
   imports: [
     BrowserModule,
