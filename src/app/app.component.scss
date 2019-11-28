@@ -1,0 +1,53 @@
+@mixin my-background($path) {
+  background-image: url($path);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#still {
+  @include my-background("/assets/images/perxpng.png");
+  background-size: cover;
+  height: 100%;
+}
+
+#video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.anna {
+  @include my-background("/assets/images/anna-gong.png");
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  background-size: 100px 100px;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.pause_play {
+  @include my-background("/assets/images/play.png");
+  position: fixed;
+  top: 150px;
+  right: 30px;
+  background-size: 100px 100px;
+  display: none;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.start {
+  cursor: pointer;
+  color: #43b8ff;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 40px;
+  font-weight: bold;
+  position: fixed;
+  bottom: 50px;
+  left: 30px;
+}
